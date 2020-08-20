@@ -9,8 +9,9 @@ body {
 .navbar {
   display: flex;
   background: rgb(255, 223, 134);
-  padding: 2px 16px 2px 16px;
+  padding: 12px 16px 12px 16px;
   box-shadow: 0px -3px 8px rgba(0, 0, 0, 1);
+  justify-content: space-between;
 }
 
 .navbar li {
@@ -32,21 +33,30 @@ body {
 }
 
 .main-content {
-  display: inline-block;
+  display: block;
   margin: 0 10% 0 10%;
   padding: 0 64px 0 64px;
   background: rgba(255, 250, 240, 0.747);
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.39);
+  justify-content: center;
 }
 
 .info-row {
-  padding-top: 32px;
+  padding: 32px 8px 32px 8px;
   display: flex;
+}
+
+.info-row info-text {
+  flex-direction: column;
 }
 
 .info-row img {
   width: 200px;
   padding-right: 32px;
+}
+
+.info-row h1 {
+  margin: 6px 0px 6px 0px;
 }
 
 .intro-txt {
@@ -66,4 +76,8 @@ body {
   font-size: 1.3em;
   text-align: center;
   margin: 6px;
+}
+
+.contact-row data-row {
+  flex-direction: column;
 }
